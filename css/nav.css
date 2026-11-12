@@ -24,8 +24,6 @@
 }
 
 .nav-esquerda {
-    padding: 0 1rem;
-    flex: 1;
     justify-content: flex-start;
 }
 
@@ -40,13 +38,33 @@
 }
 
 .nav-direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-right: 2rem;
+    gap: 1rem;
 }
 
+.tema {
+    color: var(--cor-texto-contraste);
+    fill: var(--cor-texto-contraste);
+}
+
+.tema:hover {
+    cursor: pointer;
+    color: color-mix(in srgb, var(--cor-texto-contraste) 90%, var(--cor-texto));
+    fill: color-mix(in srgb, var(--cor-texto-contraste) 90%, var(--cor-texto));
+    transition: color ease 200ms, fill ease 200ms;
+}
 
 .botao-login {
+    align-items: center;
+    justify-content: center;
     padding: .6rem;
+    display: flex;
+    gap: .5rem;
     background-color: var(--cor-interface);
+    color: var(--cor-texto-contraste) !important;
 }
 
 .botao-login:hover {

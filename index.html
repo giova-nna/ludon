@@ -4,39 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ludon</title>
+    <title>Ludon - tracking de jogos</title>
+    <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/home.css">
+    <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- nav -->
     <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-esquerda">
-                <a class="logo" href="index.html">
-                    <img class="logo-svg" src="/assets/logos/logo.svg" alt="logo">
-                </a>
-            </div>
-
-            <div class="nav-centro">
-                <a href="catalogo.html">Catálogo</a>
-                <a href="sobre.html">Sobre</a>
-            </div>
-
-            <div class="nav-direita">
-                <a class="botao-login" href="login.html">Entrar</a>
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-esquerda">
+                    <a class="logo" href="index.html">
+                        <img class="logo-svg" src="/assets/logos/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-centro">
+                    <a href="explorar.html">Jogos</a>
+                    <a href="sobre.html">Sobre</a>
+                </div>
+                <div class="nav-direita">
+                    <i class="tema" data-lucide="moon"></i>
+                    <a class="botao-login" href="login.html">Entrar <i data-lucide="chevron-right"></i></a>
+                </div>
             </div>
         </div>
     </nav>
     <!-- fim nav -->
+    <!-- homepage -->
     <div class="home-container">
+        <div class=container>
+            <!-- titulo e chamada -->
+            <div class="titulo">
+                <h1 class="ludon">Lud<span>on</span></h1>
+                <h2 class="slogan">seus <span>jogos</span>, seu <span>controle</span></h2>
+            </div>
+            <!-- fim título -->
+
+            <div class="criar-conta">
+                <p>Explore, organize e acompanhe o universo dos videogames. Registre seus jogos e monitore seu
+                    progresso. <strong>Lud<span>on</span> é seu espaço.</strong></p>
+                <a class="botao-conta" href="login.html">Criar conta <i data-lucide="chevron-right"></i></a>
+            </div>
+
+            <hr>
+            <div class="conteudo">
+                <!-- conteudo - jogos -->
+                <div class="em-alta">
+                    <h2><span class="traco">l</span>Jogos do momento</h2>
+                    <div class="jogos-alta">
+                        <a href=""><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrVShEmz6vN01_rxUF2YCKuthXrEvxJgb5l98MLX5sOg&s=10"
+                                alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                    </div>
+                </div>
+                <!-- conteudo - generos -->
+                <div class="generos">
+                    <h2><span class="traco">l</span>Encontre seu próximo jogo</h2>
+                    <div class="descubra-genero">
+                        <a href="">Gênero 1</a>
+                        <a href="">Gênero 2</a>
+                        <a href="">Gênero 3</a>
+                        <a href="">Gênero 4</a>
+                        <a href="">Gênero 5</a>
+                        <a href="">Gênero 6</a>
+                        <a href="">Gênero 7</a>
+                        <a href="">Gênero 8</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 
     </div>
+    </div>
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- script pro lucide gerar os ícones -->
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>
