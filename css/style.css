@@ -1,0 +1,28 @@
+/* tema claro */
+/* body.tema-claro { */
+/* arrumar depois quando tiver o sistema de tema */
+body {
+    --cor-primaria: #B9B9B9;
+    --cor-secundaria: #D8D8D8;
+    --cor-texto: #000;
+    --cor-texto-contraste: #FFF;
+}
+
+/* tema escuro */
+/* body.tema-escuro {
+    --cor-primaria: #111111;
+    --cor-secundaria: #2a2a2a;
+    --cor-texto: #FFF;
+    --cor-texto-contraste: #000;
+} */
+
+body {
+    --cor-interface: #0048FF;
+
+    font-family: "Space Grotesk";
+    font-style: normal;
+
+    padding: 0;
+    margin: 0;
+
+}
