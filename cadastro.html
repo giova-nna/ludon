@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludon - Cadastre-se</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cadastro-container">
+        <div class="container"></div>
+        <div class="cadastro-tema">
+            <i class="tema" data-lucide="moon"></i>
+        </div>
+        <div class="area-cadastro">
+            <div class="form-cadastro">
+                <div class="logotipo">
+                    <img class="logo" src="/assets/logos/logo.svg">
+                    <h2 class="">Cadastre-se. Aqui você tem o controle.</h2>
+                </div>
+
+                <form action="*">
+                    <div class="formulario">
+
+                        <div class="campo-grid">
+                            <div class="campo">
+                                <label class="form-label" for="nome">Nome</label>
+                                <div class="campo-nome input-container">
+
+                                    <i data-lucide="user-round"></i>
+                                    <input type="text" name="nome" class="nome" placeholder="Digite seu nome">
+                                </div>
+                            </div>
+
+                            <div class="campo">
+                                <label class="form-label" for="nasc">Data de nascimento</label>
+                                <div class="campo-nasc input-container">
+
+                                    <i data-lucide="calendar"></i>
+                                    <input type="date" name="nasc" class="nasc" placeholder="Digite seu sobrenome">
+                                </div>
+                            </div>
+
+                        </div>
+                        <label class="form-label" for="email">E-mail</label>
+                        <div class="campo-email input-container">
+
+                            <i data-lucide="mail"></i>
+                            <input type="email" name="email" class="email" placeholder="Digite seu e-mail">
+                        </div>
+                        <label class="form-label" for="usuario">Nome de usuário</label>
+                        <div class="campo-usuário input-container">
+
+                            <i data-lucide="at-sign"></i>
+                            <input type="text" name="senha" class="usuario" placeholder="Digite seu nome">
+                        </div>
+                        <label class="form-label" for="senha">Senha</label>
+                        <div class="campo-senha input-container">
+
+                            <i data-lucide="lock"></i>
+                            <input type="text" name="senha" class="senha" placeholder="Digite seu nome">
+                        </div>
+                        <button class="botao-cadastrar" type="submit">
+                            CADASTRAR
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- script pro lucide gerar os ícones -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.footer-container {
+    /* position: ; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--cor-primaria);
+    font-size: 1rem;
+    color: var(--cor-texto);
+    padding: 0 0 1rem 0;
+}
+
+.footer-ludon {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.footer-ludon h3,
+.footer-ludon h2 {
+    margin-bottom: 0
+}
+
+.footer-ludon a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-ludon a:hover {
+    color: color-mix(in srgb, var(--cor-texto) 80%, var(--cor-interface));
+}
+
+.footer-ludon .marca h2 span {
+    color: var(--cor-interface);
+}
+
+.footer-ludon .copyright {
+    font-weight: 600;
+}
+
+.gamepad {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.gamepad svg {
+    margin-top: 1.2rem;
+    color: var(--cor-texto)
+}

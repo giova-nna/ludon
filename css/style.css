@@ -2,10 +2,14 @@
 /* body.tema-claro { */
 /* arrumar depois quando tiver o sistema de tema */
 body {
-    --cor-primaria: #B9B9B9;
-    --cor-secundaria: #D8D8D8;
+    --cor-fundo-um: #B9B9B9;
+    --cor-fundo-dois: #D8D8D8;
     --cor-texto: #000;
     --cor-texto-contraste: #FFF;
+
+    /* cor dinâmica dependendo do tems */
+    --cor-primaria: color-mix(in srgb, var(--cor-fundo-um) 95%, var(--cor-interface));
+    --cor-secundaria: color-mix(in srgb, var(--cor-fundo-dois) 95%, var(--cor-interface));
 }
 
 /* tema escuro */
@@ -18,11 +22,20 @@ body {
 
 body {
     --cor-interface: #0048FF;
-
+    /* --cor-interface: #9500ff; */
     font-family: "Space Grotesk";
     font-style: normal;
+
 
     padding: 0;
     margin: 0;
 
+}
+
+/* vale pra todas asas páfinas */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    min-width: 200px;
+    margin: 0 auto;
 }

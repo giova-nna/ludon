@@ -1,0 +1,95 @@
+body {
+    background-color: var(--cor-secundaria);
+}
+
+.area-cadastro {
+    width: 40%;
+    max-width: 60%;
+    margin: 0 auto;
+    background-color: var(--cor-primaria);
+    padding: 1rem 2rem;
+}
+
+.cadastro-tema {
+    padding: 1rem;
+    text-align: right;
+}
+
+.logotipo {
+    margin: auto auto;
+    /* margin-top: 3rem; */
+    text-align: center;
+}
+
+.logotipo img {
+    width: 30%;
+}
+
+.formulario input {
+    width: 99%;
+    height: 2.5rem;
+    border-radius: 0;
+    border: 0;
+    outline: 1px solid color-mix(in srgb, var(--cor-texto) 30%, transparent);
+}
+
+.formulario input:focus-visible {
+    outline: 1px solid var(--cor-interface);
+}
+
+.campo-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: .9rem;
+    width: 99%;
+}
+
+.campo {
+    min-width: 0;
+}
+
+.form-label {
+    display: block;
+    color: var(--cor-texto);
+    font-weight: 600;
+    margin: .8rem 0 .4rem 0;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container svg {
+    color: grey;
+    position: absolute;
+    padding-left: .5rem;
+    height: 40%;
+}
+
+.input-container input {
+    padding-left: 2rem;
+}
+
+.botao-cadastrar {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid color-mix(in srgb, var(--cor-interface) 30%, transparent);
+    background-color: var(--cor-interface);
+    color: var(--cor-texto-contraste);
+    margin-top: 1rem;
+}
+
+.botao-cadastrar:hover {
+    background-color: color-mix(in srgb, var(--cor-interface) 80%, var(--cor-texto));
+    color: color-mix(in srgb, var(--cor-texto-contraste) 90%, transparent);
+    cursor: pointer;
+}
+
+/* .nasc {
+    width: 96% !important;
+} */

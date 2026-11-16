@@ -1,0 +1,45 @@
+body {
+    background-color: var(--cor-secundaria);
+}
+
+.conteudo-explorar {
+    background-color: var(--cor-primaria);
+
+}
+
+.titulo-pagina {
+    text-align: center;
+}
+
+.jogos-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 97%;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+}
+
+.jogos-grid a {
+    background-color: var(--cor-primaria);
+    margin: 0;
+    padding: 0rem;
+}
+
+.jogos-grid img {
+    width: 100%;
+    height: 100%;
+}
+
+.jogos-grid img:hover {
+    transform: scale(1.05);
+    border: 2px solid color-mix(in srgb, var(--cor-interface) 30%, transparent);
+    transition: transform 200ms ease;
+}
+
+.traco {
+    color: transparent;
+    border-radius: 3px;
+    margin-right: .8rem;
+    background-color: var(--cor-interface);
+}

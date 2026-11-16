@@ -2,13 +2,6 @@ body {
     background-color: var(--cor-secundaria);
 }
 
-.container {
-    width: 80%;
-    max-width: 1200px;
-    min-width: 200px;
-    margin: 0 auto;
-}
-
 .titulo {
     text-align: center;
 }
@@ -74,14 +67,15 @@ body {
 
 hr {
     margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     text-align: center;
     width: 95%;
     border: 2px solid color-mix(in srgb, var(--cor-texto) 50%, transparent);
 }
 
 .conteudo {
-    margin-bottom: 50rem
+    margin-top: 6rem;
+    margin-bottom: 12rem
 }
 
 .traco {
@@ -96,6 +90,7 @@ hr {
     grid-template-columns: repeat(6, 1fr);
     max-width: 100%;
     gap: 1rem;
+    padding-bottom: 2rem;
 }
 
 .jogos-alta a {
@@ -110,15 +105,39 @@ hr {
 }
 
 .jogos-alta img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     border: 2px solid color-mix(in srgb, var(--cor-interface) 30%, transparent);
     transition: transform 200ms ease;
 }
 
 .generos {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2rem;
+    margin-top: 4rem;
 }
 
-.descubra-genero {}
+.generos a {
+    color: color-mix(in srgb, var(--cor-interface) 80%, transparent);
+
+    text-decoration: none;
+    padding: .3rem 0;
+    background-color: color-mix(in srgb, var(--cor-interface) 10%, transparent);
+    border: 1px solid color-mix(in srgb, var(--cor-interface) 50%, transparent);
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.generos a:hover {
+    color: color-mix(in srgb, var(--cor-interface) 90%, transparent);
+    background-color: color-mix(in srgb, var(--cor-interface) 20%, transparent);
+    border: 1px solid color-mix(in srgb, var(--cor-interface) 60%, transparent);
+    transform: scale(1.02);
+}
+
+.descubra-genero {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+    font-size: 12px;
+    gap: 6px;
+}
