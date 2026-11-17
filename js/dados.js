@@ -15,7 +15,7 @@ let dados = {
         {
             id: 2,
             titulo: "Stardew Valley",
-            capa: "assets/jogos/stardew-valley.jpg",
+            capa: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYgXi0ipm_zQfWOhhiOTYlOPj_sYbBnnVlX8eoaKzxxA&s",
             lancamento: 2016,
             desenvolvedora: "ConcernedApe",
             genero: "Simulação",
@@ -25,7 +25,7 @@ let dados = {
         {
             id: 3,
             titulo: "Minecraft",
-            capa: "assets/jogos/minecraft.jpg",
+            capa: "https://upload.wikimedia.org/wikinews/en/7/7a/Minecraft_game_cover.jpeg?utm_source=en.wikinews.org&utm_campaign=index&utm_content=original",
             lancamento: 2010,
             desenvolvedora: "Mojang Studios",
             genero: "Sandbox",
