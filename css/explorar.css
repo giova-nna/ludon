@@ -4,7 +4,8 @@ body {
 
 .conteudo-explorar {
     background-color: var(--cor-primaria);
-
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .titulo-pagina {
@@ -13,7 +14,7 @@ body {
 
 .jogos-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     max-width: 97%;
     gap: 1rem;
     padding-bottom: 2rem;
@@ -31,10 +32,75 @@ body {
     height: 100%;
 }
 
-.jogos-grid img:hover {
-    transform: scale(1.05);
-    border: 2px solid color-mix(in srgb, var(--cor-interface) 30%, transparent);
-    transition: transform 200ms ease;
+
+.jogo-bloco {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--cor-primaria);
+}
+
+.jogo-bloco .jogo-topo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .7rem;
+
+    background: linear-gradient(to bottom, color-mix(in srgb, var(--cor-texto) 92%), transparent);
+    color: var(--cor-texto-contraste);
+}
+
+.jogo-bloco:hover {
+    transform: scale(1.03);
+}
+
+.jogo-capa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.jogo-nome {
+    margin: 0;
+    font-size: .8rem;
+}
+
+.jogo-ano {
+    font-size: .8rem;
+    color: color-mix(in srgb, var(--cor-texto-contraste) 60%, transparent);
+}
+
+.jogo-hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: linear-gradient(to top, color-mix(in srgb, var(--cor-texto) 75%, transparent), transparent);
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+}
+
+.jogo-bloco:hover .jogo-hover {
+    transform: translateY(0);
+}
+
+.botao-adicionar {
+    background-color: var(--cor-interface);
+    text-decoration: none;
+    color: var(--cor-texto-contraste);
+    border: 1px solid color-mix(in srgb, var(--cor-interface) 30%, transparent);
+    padding: .3rem;
+    width: 100%;
+}
+
+.botao-adicionar:hover {
+    background-color: color-mix(in srgb, var(--cor-interface) 95%, #000);
+    color: color-mix(in srgb, var(--cor-texto-contraste) 90%, transparent);
+    font-weight: 600;
 }
 
 .traco {

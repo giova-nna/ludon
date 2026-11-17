@@ -5,9 +5,10 @@ body {
 .area-cadastro {
     width: 40%;
     max-width: 60%;
+    min-width: 400px;
     margin: 0 auto;
     background-color: var(--cor-primaria);
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
 }
 
 .cadastro-tema {
@@ -44,10 +45,6 @@ body {
     width: 99%;
 }
 
-.campo {
-    min-width: 0;
-}
-
 .form-label {
     display: block;
     color: var(--cor-texto);
@@ -70,6 +67,10 @@ body {
 
 .input-container input {
     padding-left: 2rem;
+}
+
+.nasc {
+    min-width: 120px;
 }
 
 .botao-cadastrar {

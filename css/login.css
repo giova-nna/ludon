@@ -3,11 +3,13 @@ body {
 }
 
 .area-login {
-    width: 60%;
+
+    width: 50%;
     max-width: 90%;
     margin: 0 auto;
     background-color: var(--cor-primaria);
     padding: 1rem 2rem;
+    min-width: 500px;
 }
 
 .login-tema {
@@ -34,7 +36,6 @@ body {
 .formulario input {
     font-family: inherit;
     display: block;
-    /* margin: 0 auto; */
     width: 100%;
     height: 2.5rem;
     border-radius: 0;
@@ -82,7 +83,6 @@ body {
     font-size: 15px;
     font-weight: 600;
     border: 1px solid color-mix(in srgb, var(--cor-interface) 30%, transparent);
-    ;
 }
 
 .botao-entrar:not(.botao-alternativo) {

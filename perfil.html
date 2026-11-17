@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludon - Perfil</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-esquerda">
+                    <a class="logo" href="index.html">
+                        <img class="logo-svg" src="/assets/logos/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-centro">
+                    <a href="explorar.html">Explorar</a>
+                    <a href="https://github.com/giova-nna/ludon">Sobre</a>
+                </div>
+                <div class="nav-direita">
+                    <i class="tema" data-lucide="moon"></i>
+                    <a class="botao-login" href="login.html">Entrar <i data-lucide="chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- fim nav -->
+
+    <div class="perfil-container">
+        <div class="container">
+            <div class="limite">
+                <div class="usuario-container">
+
+                    <div class="usuario-foto">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy9ZPWOTv8LE79me4whYoaveHGrQQTYPHhuKIYEsKqvw&s=10"
+                            alt="">
+                    </div>
+                    <div class="bio">
+                        <h2 class="usuario-nome">@nome_usuario</h2>
+                        <p class="desc">Adicione sua descrição</p>
+                        <div class="usuario-editar">
+                            <button class="botao-editar" type="submit">
+                                EDITAR PERFIL
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="biblioteca">
+                    <div class="recente">
+                        <div class="jogos-jogados">
+                            <h2><span class="traco">l</span>Estante virtual</h2>
+
+                            <div class="jogos-grid">
+                                <div class="jogo-item">
+                                    <div class="jogo-bloco">
+                                        <img class="jogo-capa"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrVShEmz6vN01_rxUF2YCKuthXrEvxJgb5l98MLX5sOg&s=10">
+                                        <div class="jogo-baixo">
+                                            <span class="jogo-tempo estatistica"><i data-lucide="clock"></i> 100h
+                                                30m</span>
+                                            <span class="jogo-progresso estatistica"><i
+                                                    data-lucide="trophy"></i>16/57</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="botao-container">
+                                        <button class="botao-adicionar">
+                                            EDITAR</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rodapé -->
+    <footer class=" footer-container">
+        <div class="container">
+            <div class="footer-ludon">
+                <div class="marca">
+                    <div class="gamepad">
+                        <i data-lucide="gamepad"></i>
+                        <h2 style="font-family: Orbitron;">Lud<span>on</span></h2>
+                    </div>
+
+                    <div>um projeto de programação web</div>
+                    <p class="copyright">© 2026 Ludon</p>
+                </div>
+                <div class="navegar">
+                    <h3>Navegar</h3>
+                    <a href="">Explorar</a>
+                    <a href="login.html">Criar conta</a>
+                </div>
+                <div class="sobre">
+                    <h3>Sobre</h3>
+                    <a href="https://github.com/giova-nna/ludon">Termos de Seriço</a>
+                    <a href="https://github.com/giova-nna/ludon">Política de Privacidade</a>
+                    <a href="https://github.com/giova-nna/ludon">Contato</a>
+                </div>
+                <div class="social">
+                    <h3>Social</h3>
+                    <a href="https://github.com/giova-nna/ludon">Twitter</a>
+                    <a href="https://github.com/giova-nna/ludon">Instagram</a>
+                    <a href="https://github.com/giova-nna/ludon">Discord</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- fim rodapé -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- script pro lucide gerar os ícones -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
