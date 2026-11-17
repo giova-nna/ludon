@@ -56,13 +56,13 @@
 
 .tema {
     color: color-mix(in srgb, var(--cor-interface) 10%, var(--cor-texto));
-    fill: color-mix(in srgb, var(--cor-interface) 10%, var(--cor-texto));
+    /* fill: color-mix(in srgb, var(--cor-interface) 10%, var(--cor-texto)); */
 }
 
 .tema:hover {
     cursor: pointer;
     color: color-mix(in srgb, var(--cor-interface) 90%, var(--cor-texto));
-    fill: color-mix(in srgb, var(--cor-interface) 90%, var(--cor-texto));
+    fill: color-mix(in srgb, var(--cor-interface) 20%, transparent);
     transition: color ease 300ms, fill ease 300ms;
 }
 
@@ -88,4 +88,53 @@
 
 .logo-svg:hover {
     transform: scale(1.02);
+}
+
+.botao-tema {
+    background-color: transparent;
+    border: none;
+}
+
+.tema-container {
+    position: relative;
+    font-size: .8rem;
+}
+
+.tema-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 999;
+    padding: 1rem;
+    background-color: var(--cor-primaria);
+    border: 1px solid var(--cor-interface);
+}
+
+.tema-menu.ativo {
+    display: block;
+}
+
+.tema-menu select {
+    margin: .4rem 0 .2rem 0;
+    font-size: .8rem;
+    border-radius: 0;
+    border: none;
+    border: 1px solid color-mix(in srgb, var(--cor-interface) 30%, transparent);
+    color: var(--cor-texto-contraste)
+}
+
+.tema-menu button {
+    margin: .2rem 0;
+    border-radius: 0;
+    font-weight: 600;
+    border: 1px solid color-mix(in srgb, var(--cor-interface) 30%, transparent);
+    color: var(--cor-texto-contraste)
+}
+
+.tema-menu button:hover {
+    background-color: color-mix(in srgb, var(--cor-texto) 85%, transparent);
+    color: color-mix(in srgb, var(--cor-texto-contraste) 85%, transparent);
+    cursor: pointer;
+    transform: scale(1.01);
 }

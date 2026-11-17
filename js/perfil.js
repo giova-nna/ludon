@@ -76,6 +76,64 @@ biblioteca.forEach(teca => {
     botaoEditar.classList.add("botao-editar-jogo");
     botaoEditar.textContent = "EDITAR"
 
+    // aciona o novo modal
+    botaoEditar.addEventListener("click", function () {
+
+        // completa as informaççoes do jogo
+        document.querySelector(".modal-capa").src = jogo.capa;
+        document.querySelector(".modal-titulo").firstChild.textContent = jogo.titulo + " ";
+        document.querySelector(".modal-ano").textContent = `(${jogo.lancamento})`;
+        document.querySelector(".modal-dev").textContent = jogo.desenvolvedora;
+        document.querySelector(".modal-genero").textContent = jogo.genero;
+
+        // pega as informações da biblioteca
+        document.getElementById("modal-horas").value = teca.horas;
+        document.getElementById("modal-progresso").value = teca.progresso;
+
+        document.getElementById("modal-acima").style.display = "flex";
+    })
+
+
+    // logica de atualizar biblioteca
+    document.getElementById("modal-salvar").addEventListener("click", function () {
+        // atualiza as inforações
+        teca.horas = Number(document.getElementById("modal-horas").value)
+        teca.progresso = Number(document.getElementById("modal-progresso").value)
+
+        // salva no local storage
+        salvarDados();
+
+        // fecha o modal 
+        document.getElementById("modal-acima").style.display = "none";
+
+        // f5
+        location.reload()
+    });
+
+    // deleta jogos etc
+    document.getElementById("modal-excluir").addEventListener("click", function () {
+
+        // acja o jogo
+        const idx = usuarioLogado.biblioteca.indexOf(teca);
+        usuarioLogado.biblioteca.splice(idx, 1); // a partir do indice, tira 1 (ou seja, ele mesmo)
+
+
+        // salva no local storage
+        salvarDados();
+
+        // fecha o modal 
+        document.getElementById("modal-acima").style.display = "none";
+
+        // f5
+        location.reload()
+
+    });
+
+    // fecha modal no cancelar
+    document.getElementById("modal-cancelar").addEventListener("click", function () {
+        document.getElementById("modal-acima").style.display = "none";
+    })
+
     // termina de adicionar tudo no html meu deus
     botaoContainer.appendChild(botaoEditar);
     jogoItem.appendChild(botaoContainer)

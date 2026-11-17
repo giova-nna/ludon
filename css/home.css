@@ -109,6 +109,7 @@ hr {
 }
 
 .generos {
+
     margin-top: 2rem;
     /* margin-bottom: 2rem; */
 }
@@ -135,8 +136,7 @@ hr {
 
 .descubra-genero {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-
+    grid-template-columns: repeat(8, 1fr);
     font-size: 12px;
     gap: 6px;
 }

@@ -20,7 +20,7 @@ const listaGeneros = dados.jogos.reduce((lista, jogo) => {
     }
 
     return lista;
-}, []).slice(0, 10)
+}, []).slice(0, 8)
 // ^^ valor incial, lista vazia
 
 listaGeneros.forEach(item => {

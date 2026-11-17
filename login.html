@@ -18,42 +18,42 @@
 </head>
 
 <body>
-    <!-- nav -->
-    <!-- <nav class="nav">
-        <div class="container">
-            <div class="nav-container">
-                <div class="nav-esquerda">
-                    <a class="logo" href="index.html">
-                        <img class="logo-svg" src="/assets/logos/logo.svg" alt="logo">
-                    </a>
-                </div>
-                <div class="nav-centro">
-                    <a href="explorar.html">Explorar</a>
-                    <a href="https://github.com/giova-nna/ludon">Sobre</a>
-                </div>
-                <div class="nav-direita">
-                    <i class="tema" data-lucide="moon"></i>
-                    <a class="botao-login" href="login.html">Entrar <i data-lucide="chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </nav> -->
-    <!-- fim nav -->
-    <!-- login -->
-
-
     <div class="login-container">
         <div class="container">
             <div class="login-tema">
-                <i class="tema" data-lucide="moon"></i>
+                <div class="tema-container">
+                    <button type="button" class="botao-tema" id="botao-tema">
+                        <i class="tema" data-lucide="moon"></i>
+                    </button>
+                    <div class="tema-menu" id="tema-menu">
+
+                        <form id="form-tema">
+                            <label for="tema">Cor do tema</label>
+
+                            <select id="tema">
+                                <option value="azul">Azul</option>
+                                <option value="roxo">Roxo</option>
+                                <option value="ciano">Ciano</option>
+                                <option value="verde">Verde</option>
+                                <option value="rosa">Rosa</option>
+                                <option value="vermelho">Vermelho</option>
+                                <option value="amarelo">Amarelo</option>
+                                <option value="laranja">Laranja</option>
+                            </select>
+
+                            <button type="submit">Aplicar</button>
+                        </form>
+
+                    </div>
+                </div>
             </div>
             <div class="area-login">
                 <div class="form-login">
                     <div class="logotipo">
-                        <img class="logo" src="/assets/logos/logo.svg">
+                        <img id="logo-ludon" class="logo" src="/assets/logos/logo.svg">
                         <h2 class="">Bem-vindo(a) de volta ao jogo</h2>
                     </div>
-                    <form id="formulario-login" action="*">
+                    <form id="formulario-login">
                         <div class="formulario">
                             <label class="form-label" for="email"><span class="traco">l</span>Nome de usuário ou
                                 e-mail</label>
@@ -103,47 +103,6 @@
         </div>
     </div>
 
-
-
-
-
-
-    <!-- fim login -->
-    <!-- rodapé -->
-    <!-- <footer class=" footer-container">
-        <div class="container">
-            <div class="footer-ludon">
-                <div class="marca">
-                    <div class="gamepad">
-                        <i data-lucide="gamepad"></i>
-                        <h2 style="font-family: Orbitron;">Lud<span>on</span></h2>
-                    </div>
-
-                    <div>um projeto de programação web</div>
-                    <p class="copyright">© 2026 Ludon</p>
-                </div>
-                <div class="navegar">
-                    <h3>Navegar</h3>
-                    <a href="">Explorar</a>
-                    <a href="login.html">Criar conta</a>
-                </div>
-                <div class="sobre">
-                    <h3>Sobre</h3>
-                    <a href="https://github.com/giova-nna/ludon">Termos de Seriço</a>
-                    <a href="https://github.com/giova-nna/ludon">Política de Privacidade</a>
-                    <a href="https://github.com/giova-nna/ludon">Contato</a>
-                </div>
-                <div class="social">
-                    <h3>Social</h3>
-                    <a href="https://github.com/giova-nna/ludon">Twitter</a>
-                    <a href="https://github.com/giova-nna/ludon">Instagram</a>
-                    <a href="https://github.com/giova-nna/ludon">Discord</a>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-    <!-- fim rodapé -->
-
     <!-- Lucide icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <!-- script pro lucide gerar os ícones -->
@@ -152,6 +111,7 @@
     </script>
     <script src="js/dados.js"></script>
     <script src="js/storage.js"></script>
+    <script src="js/tema.js"></script>
     <script src="js/login.js"></script>
 </body>
 

@@ -24,15 +24,41 @@
             <div class="nav-container">
                 <div class="nav-esquerda">
                     <a class="logo" href="index.html">
-                        <img class="logo-svg" src="/assets/logos/logo.svg" alt="logo">
+                        <img id="logo-ludon" class="logo-svg" src="/assets/logos/logo.svg" alt="logo">
                     </a>
                 </div>
                 <div class="nav-centro">
                     <a href="explorar.html">Explorar</a>
                     <a href="https://github.com/giova-nna/ludon">Sobre</a>
+                    <a href="perfil.html">Perfil</a>
                 </div>
                 <div class="nav-direita">
-                    <i class="tema" data-lucide="moon"></i>
+                    <div class="tema-container">
+                        <button type="button" class="botao-tema" id="botao-tema">
+                            <i class="tema" data-lucide="moon"></i>
+                        </button>
+                        <div class="tema-menu" id="tema-menu">
+
+                            <form id="form-tema">
+                                <label for="tema">Cor do tema</label>
+
+                                <select id="tema">
+                                    <option value="azul">Azul</option>
+                                    <option value="roxo">Roxo</option>
+                                    <option value="ciano">Ciano</option>
+                                    <option value="verde">Verde</option>
+                                    <option value="rosa">Rosa</option>
+                                    <option value="vermelho">Vermelho</option>
+                                    <option value="amarelo">Amarelo</option>
+                                    <option value="laranja">Laranja</option>
+                                </select>
+
+                                <button type="submit">Aplicar</button>
+                            </form>
+
+                        </div>
+                    </div>
+
                     <a class="botao-login" href="login.html">Entrar <i data-lucide="chevron-right"></i></a>
                 </div>
             </div>
@@ -115,6 +141,7 @@
     <!-- fim rodapé -->
     <script src="js/dados.js"></script>
     <script src="js/storage.js"></script>
+    <script src="js/tema.js"></script>
     <script src="js/home.js"></script>
     <!-- script pro lucide gerar os ícones -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>

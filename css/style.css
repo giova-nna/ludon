@@ -1,7 +1,7 @@
 /* tema claro */
 /* body.tema-claro { */
 /* arrumar depois quando tiver o sistema de tema */
-body {
+:root {
     --cor-fundo-um: #121213;
     --cor-fundo-dois: #171718;
 
@@ -25,9 +25,12 @@ body {
     font-style: normal;
 
 
+
+}
+
+body {
     padding: 0;
     margin: 0;
-
 }
 
 /* vale pra todas asas páfinas */

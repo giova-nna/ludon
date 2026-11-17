@@ -261,7 +261,7 @@ hr {
     font-size: .8rem;
 }
 
-.modal-status {
+.modal-genero {
     color: color-mix(in srgb, var(--cor-interface) 80%, transparent);
     margin-top: .2rem !important;
     text-decoration: none;
@@ -347,7 +347,7 @@ hr {
     width: 50%;
     margin: 0 auto;
     padding: .4rem;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     border: 1px solid color-mix(in srgb, var(--cor-interface) 30%, transparent);
     background-color: var(--cor-interface);
@@ -358,7 +358,7 @@ hr {
     width: 50%;
     margin: 0 auto;
     padding: .4rem;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     border: 1px solid color-mix(in srgb, var(--cor-interface) 30%, transparent);
     color: var(--cor-texto-contraste)

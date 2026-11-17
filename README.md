@@ -8,10 +8,7 @@ __Ludon__ é um site de tracking de progresso em jogos, inspirado em sites como 
 
 ## Elementos principais: 
 
-- Utilização da API do IGDB para buscar jogos.
-- Interface personalizável, podendo escolher entre modo claro e escuro e a cor principal da interface.
+- Interface personalizável, podendo alterar a cor principal da interface.
 - Controle de dados feito através do `localStorage`.
 
 > O projeto usa apenas HTML, CSS e JavaScript.
-
-### Feito do zero, sem uso de inteligência artificial.

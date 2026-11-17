@@ -9,7 +9,7 @@ function fazerLogin(usuario, senha) {
     );
 
     // se algo falhar, retorna erro
-    if (!usuarioEncontrado || usuarioEncontrado.senha !== senha) {
+    if ((!usuarioEncontrado || usuarioEncontrado.senha !== senha) || (senha.length < 8) || (usuario == null)) {
         alert("Usuário/e-mail ou senha incorretos!")
         return;
     }

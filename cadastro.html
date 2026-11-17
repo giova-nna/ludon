@@ -21,16 +21,39 @@
     <div class="cadastro-container">
         <div class="container">
             <div class="cadastro-tema">
-                <i class="tema" data-lucide="moon"></i>
+                <div class="tema-container">
+                    <button type="button" class="botao-tema" id="botao-tema">
+                        <i class="tema" data-lucide="moon"></i>
+                    </button>
+                    <div class="tema-menu" id="tema-menu">
+
+                        <form id="form-tema">
+                            <label for="tema">Cor do tema</label>
+
+                            <select id="tema">
+                                <option value="azul">Azul</option>
+                                <option value="roxo">Roxo</option>
+                                <option value="ciano">Ciano</option>
+                                <option value="verde">Verde</option>
+                                <option value="rosa">Rosa</option>
+                                <option value="vermelho">Vermelho</option>
+                                <option value="amarelo">Amarelo</option>
+                                <option value="laranja">Laranja</option>
+                            </select>
+
+                            <button type="submit">Aplicar</button>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class="area-cadastro">
                 <div class="form-cadastro">
                     <div class="logotipo">
-                        <img class="logo" src="/assets/logos/logo.svg">
+                        <img id="logo-ludon" class="logo" src="/assets/logos/logo.svg">
                         <h2 class="">Cadastre-se. Aqui você tem o controle.</h2>
                     </div>
 
-                    <form id="formulario-cadastro" action="*">
+                    <form id="formulario-cadastro">
                         <div class="formulario">
 
                             <div class="campo-grid">
@@ -63,7 +86,8 @@
                                 <input id="email" type="email" name="email" class="email"
                                     placeholder="Digite seu e-mail" required>
                             </div>
-                            <label class="form-label" for="usuario"><span class="traco">l</span>Nome de usuário</label>
+                            <label class="form-label" for="usuario"><span class="traco">l</span>Nome de
+                                usuário</label>
                             <div class="campo-usuário input-container">
 
                                 <i data-lucide="at-sign"></i>
@@ -97,6 +121,7 @@
     </script>
     <script src="js/dados.js"></script>
     <script src="js/storage.js"></script>
+    <script src="js/tema.js"></script>
     <script src="js/cadastro.js"></script>
 </body>
 
