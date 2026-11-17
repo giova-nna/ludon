@@ -37,7 +37,18 @@ function criarJogos(jogo, tipoClasse) {
 
     const botaoAdicionar = document.createElement("button");
     botaoAdicionar.classList.add("botao-adicionar")
-    botaoAdicionar.textContent = "+ ADICIONAR"
+
+
+    // verifica s eo jogo existe pra evitar copias
+    const jogoAdicionado = usuarioLogado.biblioteca.some(item => item.jogoId === jogo.id)
+
+    // muda o texto 
+    if (jogoAdicionado) {
+        botaoAdicionar.textContent = "NA BIBLIOTECA";
+        botaoAdicionar.disabled = true; // desativa o botao igual no pi
+    } else {
+        botaoAdicionar.textContent = "+ ADICIONAR"
+    }
 
     // montar html
     // info
