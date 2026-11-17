@@ -83,8 +83,6 @@ biblioteca.forEach(teca => {
 
 });
 
-lucide.createIcons(); // pra gerar os icones criados no html de cima
-
 // <div class="jogo-item">
 //     <div class="jogo-bloco">
 //         <img class="jogo-capa"

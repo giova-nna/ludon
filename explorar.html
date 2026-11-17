@@ -48,42 +48,16 @@
             <div class="conteudo-explorar">
                 <div class="jogos-recomendados">
                     <h2><span class="traco">l</span><i class="icone-titulo" data-lucide="crown"></i>Recomendados</h2>
-                    <div class="jogos-grid">
-                        <div class="jogo-bloco">
-                            <img class="jogo-capa"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrVShEmz6vN01_rxUF2YCKuthXrEvxJgb5l98MLX5sOg&s=10">
-                            <div class="jogo-topo">
-                                <h3 class="jogo-nome">Cyberpunk 2077</h3>
-                                <span class="jogo-ano">(2022)</span>
-                            </div>
+                    <div class="jogos-grid" id="jogos-recomendados">
 
-                            <div class="jogo-hover">
-                                <button class="botao-adicionar">
-                                    + Adicionar
-                                </button>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="conteudo-explorar">
-                <div class="jogos-todos">
-                    <h2><span class="traco">l</span><i class="icone-titulo" data-lucide="crown"></i>Todos os jogos</h2>
-                    <div class="jogos-grid">
-                        <div class="jogo-bloco">
-                            <img class="jogo-capa"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrVShEmz6vN01_rxUF2YCKuthXrEvxJgb5l98MLX5sOg&s=10">
-                            <div class="jogo-topo">
-                                <h3 class="jogo-nome">Cyberpunk 2077</h3>
-                                <span class="jogo-ano">(2022)</span>
-                            </div>
 
-                            <div class="jogo-hover">
-                                <button class="botao-adicionar">
-                                    + Adicionar
-                                </button>
-                            </div>
-                        </div>
+                <div class="jogos-todos">
+                    <h2><span class="traco">l</span><i class="icone-titulo" data-lucide="gamepad-2"></i>Todos os jogos
+                    </h2>
+                    <div class="jogos-grid" id="jogos-todos">
+
                     </div>
                 </div>
             </div>
@@ -125,8 +99,11 @@
         </div>
     </footer>
     <!-- fim rodapé -->
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="js/dados.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/explorar.js"></script>
     <!-- script pro lucide gerar os ícones -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script>
         lucide.createIcons();
     </script>
