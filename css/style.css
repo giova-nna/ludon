@@ -2,27 +2,25 @@
 /* body.tema-claro { */
 /* arrumar depois quando tiver o sistema de tema */
 body {
-    --cor-fundo-um: #B9B9B9;
-    --cor-fundo-dois: #D8D8D8;
-    --cor-texto: #000;
-    --cor-texto-contraste: #FFF;
+    --cor-fundo-um: #121213;
+    --cor-fundo-dois: #171718;
 
-    /* cor dinâmica dependendo do tems */
-    --cor-primaria: color-mix(in srgb, var(--cor-fundo-um) 95%, var(--cor-interface));
-    --cor-secundaria: color-mix(in srgb, var(--cor-fundo-dois) 95%, var(--cor-interface));
-}
-
-/* tema escuro */
-/* body.tema-escuro {
-    --cor-primaria: #111111;
-    --cor-secundaria: #2a2a2a;
     --cor-texto: #FFF;
     --cor-texto-contraste: #000;
-} */
 
-body {
+    /* cor dinâmica dependendo do tems */
+    --cor-primaria: color-mix(in srgb, var(--cor-fundo-um) 98%, var(--cor-interface));
+    --cor-secundaria: color-mix(in srgb, var(--cor-fundo-dois) 98%, var(--cor-interface));
+
+
     --cor-interface: #0048FF;
     /* --cor-interface: #9500ff; */
+    /* --cor-interface: #00e5ff; */
+    /* --cor-interface: #00ff4c; */
+    /* --cor-interface: #ff00aa; */
+    /* --cor-interface: #ff0048; */
+    /* --cor-interface: #ffd500; */
+    /* --cor-interface: #ff8c00; */
     font-family: "Space Grotesk";
     font-style: normal;
 
@@ -38,4 +36,11 @@ body {
     max-width: 1200px;
     min-width: 200px;
     margin: 0 auto;
+}
+
+.traco {
+    color: transparent;
+    border-radius: 3px;
+    margin-right: .8rem;
+    background-color: var(--cor-interface);
 }

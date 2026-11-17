@@ -1,9 +1,10 @@
 body {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto)
 }
 
 .conteudo-explorar {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
     padding: 1rem;
     margin-bottom: 1rem;
 }
@@ -44,11 +45,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    box-sizing: border-box;
     padding: .7rem;
-
-    background: linear-gradient(to bottom, color-mix(in srgb, var(--cor-texto) 92%), transparent);
-    color: var(--cor-texto-contraste);
+    background: linear-gradient(to bottom, color-mix(in srgb, var(--cor-primaria) 92%), transparent);
+    color: var(--cor-texto);
 }
 
 .jogo-bloco:hover {
@@ -69,7 +68,8 @@ body {
 
 .jogo-ano {
     font-size: .8rem;
-    color: color-mix(in srgb, var(--cor-texto-contraste) 60%, transparent);
+    font-weight: 400;
+    color: color-mix(in srgb, var(--cor-texto) 60%, transparent);
 }
 
 .jogo-hover {
@@ -79,7 +79,7 @@ body {
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
-    background: linear-gradient(to top, color-mix(in srgb, var(--cor-texto) 75%, transparent), transparent);
+    background: linear-gradient(to top, color-mix(in srgb, var(--cor-primaria) 75%, transparent), transparent);
     transform: translateY(100%);
     transition: transform 250ms ease;
 }
@@ -91,21 +91,19 @@ body {
 .botao-adicionar {
     background-color: var(--cor-interface);
     text-decoration: none;
-    color: var(--cor-texto-contraste);
+    color: var(--cor-texto);
     border: 1px solid color-mix(in srgb, var(--cor-interface) 30%, transparent);
     padding: .3rem;
+    font-weight: 600;
     width: 100%;
 }
 
 .botao-adicionar:hover {
-    background-color: color-mix(in srgb, var(--cor-interface) 95%, #000);
-    color: color-mix(in srgb, var(--cor-texto-contraste) 90%, transparent);
-    font-weight: 600;
+    background-color: color-mix(in srgb, var(--cor-interface) 90%, #000);
+    color: color-mix(in srgb, var(--cor-texto) 85%, transparent);
+    cursor: pointer;
 }
 
-.traco {
-    color: transparent;
-    border-radius: 3px;
-    margin-right: .8rem;
-    background-color: var(--cor-interface);
+.icone-titulo {
+    margin-right: .6rem;
 }

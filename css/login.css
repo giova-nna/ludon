@@ -1,5 +1,6 @@
 body {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto)
 }
 
 .area-login {
@@ -7,8 +8,8 @@ body {
     width: 50%;
     max-width: 90%;
     margin: 0 auto;
-    background-color: var(--cor-primaria);
-    padding: 1rem 2rem;
+    background-color: var(--cor-secundaria);
+    padding: 2rem 2rem;
     min-width: 500px;
 }
 
@@ -41,6 +42,7 @@ body {
     border-radius: 0;
     border: 0;
     outline: 1px solid color-mix(in srgb, var(--cor-texto) 30%, transparent);
+    /* background-color: color-mix(in srgb, var(--cor-primaria) 95%, var(--cor-texto)); */
 }
 
 .formulario input:focus-visible {
@@ -91,9 +93,10 @@ body {
 }
 
 .botao-entrar:not(.botao-alternativo):hover {
-    background-color: color-mix(in srgb, var(--cor-interface) 80%, var(--cor-texto));
-    color: color-mix(in srgb, var(--cor-texto-contraste) 90%, transparent);
+    background-color: color-mix(in srgb, var(--cor-interface) 90%, var(--cor-texto));
+    color: color-mix(in srgb, var(--cor-texto-contraste) 85%, transparent);
     cursor: pointer;
+    transform: scale(1.01);
 }
 
 .botao-entrar:hover {
@@ -101,7 +104,7 @@ body {
 }
 
 .botao-alternativo:hover {
-    background-color: color-mix(in srgb, var(--cor-secundaria) 80%, var(--cor-primaria));
+    background-color: color-mix(in srgb, var(--cor-texto) 90%, var(--cor-interface));
 }
 
 
@@ -117,12 +120,12 @@ body {
 
 .esqueci {
     padding-top: .5rem;
-    color: color-mix(in srgb, var(--cor-interface) 90%, var(--cor-texto))
-        /* text-align: right; */
+    color: var(--cor-interface);
+    /* text-align: right; */
 }
 
 .esqueci:hover {
-    color: color-mix(in srgb, var(--cor-interface) 80%, var(--cor-texto));
+    color: color-mix(in srgb, var(--cor-interface) 70%, var(--cor-texto));
 }
 
 .lembrar {
@@ -159,10 +162,11 @@ body {
 }
 
 .cadastre-se a {
+    font-weight: 600;
     text-decoration: none;
-    color: color-mix(in srgb, var(--cor-interface) 90%, var(--cor-texto));
+    color: var(--cor-interface)
 }
 
 .cadastre-se a:hover {
-    color: color-mix(in srgb, var(--cor-interface) 80%, var(--cor-texto));
+    color: color-mix(in srgb, var(--cor-interface) 70%, var(--cor-texto));
 }

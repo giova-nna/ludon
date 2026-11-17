@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 
 .nav-container {
@@ -23,7 +23,7 @@
 
 .nav-container a {
     text-decoration: none;
-    color: inherit;
+    color: var(--cor-texto);
 }
 
 .nav-esquerda {
@@ -48,16 +48,22 @@
     gap: 1rem;
 }
 
+.nav-centro a:hover {
+    transform: scale(1.06);
+    font-weight: 800;
+    color: color-mix(in srgb, var(--cor-texto) 85%, transparent)
+}
+
 .tema {
-    color: var(--cor-texto-contraste);
-    fill: var(--cor-texto-contraste);
+    color: color-mix(in srgb, var(--cor-interface) 10%, var(--cor-texto));
+    fill: color-mix(in srgb, var(--cor-interface) 10%, var(--cor-texto));
 }
 
 .tema:hover {
     cursor: pointer;
-    color: color-mix(in srgb, var(--cor-texto-contraste) 90%, var(--cor-texto));
-    fill: color-mix(in srgb, var(--cor-texto-contraste) 90%, var(--cor-texto));
-    transition: color ease 200ms, fill ease 200ms;
+    color: color-mix(in srgb, var(--cor-interface) 90%, var(--cor-texto));
+    fill: color-mix(in srgb, var(--cor-interface) 90%, var(--cor-texto));
+    transition: color ease 300ms, fill ease 300ms;
 }
 
 .botao-login {
@@ -67,14 +73,19 @@
     display: flex;
     gap: .3rem;
     background-color: var(--cor-interface);
+    font-weight: 600;
     color: var(--cor-texto-contraste) !important;
 }
 
 .botao-login:hover {
-    background-color: color-mix(in srgb, var(--cor-interface) 95%, #000);
-    color: color-mix(in srgb, var(--cor-texto) 90%, transparent);
+    background-color: color-mix(in srgb, var(--cor-interface) 90%, #000);
+    color: color-mix(in srgb, var(--cor-texto-contraste) 85%, transparent);
 }
 
 .logo-svg {
     width: 150px;
+}
+
+.logo-svg:hover {
+    transform: scale(1.02);
 }
