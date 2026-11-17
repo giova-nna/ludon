@@ -30,7 +30,7 @@
                         <h2 class="">Cadastre-se. Aqui você tem o controle.</h2>
                     </div>
 
-                    <form action="*">
+                    <form id="formulario-cadastro" action="*">
                         <div class="formulario">
 
                             <div class="campo-grid">
@@ -39,7 +39,8 @@
                                     <div class="campo-nome input-container">
 
                                         <i data-lucide="user-round"></i>
-                                        <input type="text" name="nome" class="nome" placeholder="Digite seu nome">
+                                        <input id="nome" type="text" name="nome" class="nome"
+                                            placeholder="Digite seu nome" required>
                                     </div>
                                 </div>
 
@@ -49,7 +50,8 @@
                                     <div class="campo-nasc input-container">
 
                                         <i data-lucide="calendar"></i>
-                                        <input type="date" name="nasc" class="nasc" placeholder="Digite seu sobrenome">
+                                        <input id="nasc" type="date" name="nasc" class="nasc"
+                                            placeholder="Data de nascimento" required>
                                     </div>
                                 </div>
 
@@ -58,19 +60,22 @@
                             <div class="campo-email input-container">
 
                                 <i data-lucide="mail"></i>
-                                <input type="email" name="email" class="email" placeholder="Digite seu e-mail">
+                                <input id="email" type="email" name="email" class="email"
+                                    placeholder="Digite seu e-mail" required>
                             </div>
                             <label class="form-label" for="usuario"><span class="traco">l</span>Nome de usuário</label>
                             <div class="campo-usuário input-container">
 
                                 <i data-lucide="at-sign"></i>
-                                <input type="text" name="senha" class="usuario" placeholder="Digite seu nome">
+                                <input id="usuario" type="text" name="usuario" class="usuario"
+                                    placeholder="Digite seu nome" required>
                             </div>
                             <label class="form-label" for="senha"><span class="traco">l</span>Senha</label>
                             <div class="campo-senha input-container">
 
                                 <i data-lucide="lock"></i>
-                                <input type="text" name="senha" class="senha" placeholder="Digite seu nome">
+                                <input id="senha" type="password" name="senha" class="senha"
+                                    placeholder="Digite seu nome" required>
                             </div>
                             <button class="botao-cadastrar" type="submit">
                                 CADASTRAR
@@ -90,6 +95,9 @@
     <script>
         lucide.createIcons();
     </script>
+    <script src="js/dados.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/cadastro.js"></script>
 </body>
 
 </html>

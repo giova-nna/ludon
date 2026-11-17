@@ -53,20 +53,21 @@
                         <img class="logo" src="/assets/logos/logo.svg">
                         <h2 class="">Bem-vindo(a) de volta ao jogo</h2>
                     </div>
-                    <form action="*">
+                    <form id="formulario-login" action="*">
                         <div class="formulario">
                             <label class="form-label" for="email"><span class="traco">l</span>Nome de usuário ou
                                 e-mail</label>
                             <div class="input-container">
                                 <i data-lucide="at-sign"></i>
-                                <input type="input-login" type="text" name="usuario" id="usuario"
+                                <input class="input-login" type="text" name="usuario" id="usuario"
                                     placeholder="Digite o seu nome de usuário ou e-mail">
                             </div>
 
                             <label class="form-label" for="senha"><span class="traco">l</span>Senha</label>
                             <div class="input-container">
                                 <i data-lucide="lock"></i>
-                                <input type="password" name="senha" id="senha" placeholder="Digite a sua senha">
+                                <input type="password" name="senha" id="senha" placeholder="Digite a sua senha"
+                                    required>
                             </div>
                             <div class="botoes-input">
                                 <a class="esqueci" href="cadastro.html">Esqueci minha
@@ -83,7 +84,7 @@
                                     <hr class="linha">
                                 </div>
 
-                                <button class="botao-entrar botao-alternativo">
+                                <button type="button" class="botao-entrar botao-alternativo">
                                     Entrar com Google
                                 </button>
                                 <div class="cadastrar">
@@ -149,6 +150,9 @@
     <script>
         lucide.createIcons();
     </script>
+    <script src="js/dados.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
