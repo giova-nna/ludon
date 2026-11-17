@@ -5,7 +5,7 @@ let dados = {
         {
             id: 1,
             titulo: "The Witcher 3",
-            capa: "assets/jogos/witcher3.jpg",
+            capa: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdwmhvqnldGAtu1-QCTng_rZBG1xlE_Acdi25IL8ED7g&s=10",
             desenvolvedora: "CD Projekt Red",
             genero: "RPG",
             totalConquistas: 57

@@ -46,12 +46,11 @@
                 <div class="usuario-container">
 
                     <div class="usuario-foto">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy9ZPWOTv8LE79me4whYoaveHGrQQTYPHhuKIYEsKqvw&s=10"
-                            alt="">
+                        <img id="usuario-perfil" src="/assets/foto_padrao_usuario.png" alt="">
                     </div>
                     <div class="bio">
-                        <h2 class="usuario-nome">@nome_usuario</h2>
-                        <p class="desc">Adicione sua descrição</p>
+                        <h2 class="usuario-nome" id="usuario-arroba">@nome_usuario</h2>
+                        <p class="desc" id="usuario-bio">Adicione sua descrição</p>
                         <div class="usuario-editar">
                             <button class="botao-editar" type="submit">
                                 EDITAR PERFIL
@@ -65,24 +64,7 @@
                         <div class="jogos-jogados">
                             <h2><span class="traco">l</span>Estante virtual</h2>
 
-                            <div class="jogos-grid">
-                                <div class="jogo-item">
-                                    <div class="jogo-bloco">
-                                        <img class="jogo-capa"
-                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrVShEmz6vN01_rxUF2YCKuthXrEvxJgb5l98MLX5sOg&s=10">
-                                        <div class="jogo-baixo">
-                                            <span class="jogo-tempo estatistica"><i data-lucide="clock"></i> 100h
-                                                30m</span>
-                                            <span class="jogo-progresso estatistica"><i
-                                                    data-lucide="trophy"></i>16/57</span>
-                                        </div>
-
-                                    </div>
-                                    <div class="botao-container">
-                                        <button class="botao-editar-jogo">
-                                            EDITAR</button>
-                                    </div>
-                                </div>
+                            <div id="jogos-grid" class="jogos-grid">
 
                             </div>
                         </div>
@@ -131,6 +113,9 @@
     <script>
         lucide.createIcons();
     </script>
+    <script src="js/dados.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/perfil.js"></script>
 </body>
 
 </html>
